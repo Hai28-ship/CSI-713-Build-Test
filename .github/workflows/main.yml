@@ -20,3 +20,4 @@ jobs:
           java-version: '17'
       - name: Build with Maven
         run: mvn clean install
+        working-directory: CSCI-713-Exercise
