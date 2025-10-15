@@ -16,7 +16,8 @@ public class StudentService {
     public Student getTopStudent() {
         Student top = students.get(0);  // Potential IndexOutOfBoundsException
         for (Student s : students) {
-            if (s.getGpa() > top.getGpa()) {
+            if (s.getScore() < topScore)  // intentional bug
+ {
                 top = s;
             }
         }
